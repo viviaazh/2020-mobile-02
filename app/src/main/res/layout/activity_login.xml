@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout
+
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFF"
-    tools:context=".MainActivity">
+    tools:context=".Login">
+
+
 
     <ImageView
         android:id="@+id/back"
@@ -66,6 +68,7 @@
         android:background="@drawable/btn_white_small"
         android:fontFamily="@font/montserrat_semi_bold"
         android:text="Login"
+        android:textAllCaps="false"
         android:textColor="#CF1717"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
@@ -79,6 +82,7 @@
         android:fontFamily="@font/montserrat_semi_bold"
         android:text="Register"
         android:textColor="#FFFFFF"
+        android:textAllCaps="false"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.468"
         app:layout_constraintStart_toEndOf="@+id/button"
@@ -96,23 +100,14 @@
         android:fontFamily="@font/montserrat_semi_bold"
         android:text="Continue With Google"
         android:textAlignment="center"
-        android:textColor="#000000"
+        android:textColor="#CF1717"
+        android:drawableLeft="@drawable/google_logo"
+        android:paddingLeft="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button" />
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="@+id/button3"
-        app:layout_constraintEnd_toEndOf="@+id/button3"
-        app:layout_constraintHorizontal_bias="0.106"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/button3"
-        app:layout_constraintVertical_bias="0.48"
-        app:srcCompat="@drawable/google_logo" />
+        app:layout_constraintTop_toBottomOf="@+id/button"
+        android:textAllCaps="false"/>
 
     <Button
         android:id="@+id/button4"
@@ -125,26 +120,13 @@
         android:background="@drawable/btn_blue_large"
         android:fontFamily="@font/montserrat_semi_bold"
         android:text="Continue With Facebook"
+        android:textAllCaps="false"
         android:textAlignment="center"
-        android:textColor="#000000"
+        android:textColor="#0A538F"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button3" />
-
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginLeft="32dp"
-        app:layout_constraintBottom_toBottomOf="@id/button4"
-        app:layout_constraintEnd_toEndOf="@+id/button4"
-        app:layout_constraintHorizontal_bias="0.006"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/button4"
-        app:layout_constraintVertical_bias="0.52"
-        app:srcCompat="@drawable/fb_logo" />
 
     <TextView
         android:id="@+id/guest"
